@@ -1,0 +1,13 @@
+<%- include('partials/header'); -%>
+    <form action="/verify" method="post">
+        <h2>verify account</h2>
+        <label for="email">Email</label>
+        <input type="text" name="email" required />
+
+        <label for="password">otp</label>
+        <input type="password" name="otp" required />
+
+        <button type="submit">verify</button>
+    </form>
+
+    <%- include('partials/footer'); -%>

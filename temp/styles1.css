@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ______________________________________________________________________ */
+
+/* preloader animation */
+
+#preloader {
+  position: fixed;
+  /*top: 0;
+  left: 0; */
+  background-size: 30%;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff url("../public/images/carpreloader.gif") no-repeat center
+    center;
+  z-index: 9999;
+}
+
+/* ______________________________________________________________________ */
+
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-family: "Quicksand", sans-serif;
+  /* background-color: gray; */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
+.left {
+  flex-basis: 30%;
+  height: 100vh;
+  /* background-color: #ccc; */
+  /* display: flex; */
+  justify-content: center;
+  padding: 20px;
+}
+
+.div1 {
+  border: 1px solid rgb(182, 227, 249);
+  -webkit-box-shadow: 6px 6px 0px 0px rgb(182, 227, 249);
+  -moz-box-shadow: 6px 6px 0px 0px rgb(182, 227, 249);
+  box-shadow: 6px 6px 0px 0px rgb(182, 227, 249);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card {
+  height: 100%;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #3b3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-left h4 {
+  text-align: center;
+}
+.bottom-left hr {
+  margin: 0.5rem auto;
+  width: 70%;
+}
+
+.bottom-left ul {
+  list-style-type: none;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.627);
+}
+.bottom-left li {
+  margin: 20px;
+}
+.listItems {
+  display: flex;
+  flex-direction: wrap;
+}
+
+.listItems {
+  margin: 0 10px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.627);
+}
+
+.listItems span {
+  margin-right: 5px;
+  color: #000000db;
+  font-weight: 600;
+}
+
+/* .bulletsNumber p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.627);
+} */
+
+.trafficBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.698);
+  height: 70px;
+  width: 70%;
+  margin: auto;
+  border-radius: 5px;
+  border: 5px solid #000000;
+}
+.trafficBox button {
+  border-radius: 50%;
+}
+
+.trafficRed {
+  background-color: #ff0000;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+.trafficGreen {
+  background-color: #6fff00;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+.right {
+  flex-basis: 70%;
+  /* background-color: #aaa; */
+  height: 100vh;
+  /* padding: 20px; */
+}
+
+.top-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  /* height: 60%; */
+}
+
+.top-left1 {
+  flex-basis: 50%;
+  /* height: 65vh; */
+  /* background-color: #ab3c3c; */
+  padding: 20px;
+}
+.div2 {
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0, 0.815);
+  -webkit-box-shadow: 6px 6px 0px 0px rgb(209, 243, 200);
+  -moz-box-shadow: 6px 6px 0px 0px rgb(209, 243, 200);
+  box-shadow: 6px 6px 0px 0px rgb(209, 243, 200);
+}
+.div2 .row,
+.div2 .box {
+  background-color: rgb(209, 243, 200);
+}
+
+.top-right1 {
+  flex-basis: 50%;
+  /* background-color: #350b0b; */
+  /* height: 65vh; */
+  padding: 20px;
+}
+
+.div3 {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.815);
+  -webkit-box-shadow: 6px 6px 0px 0px rgb(253, 249, 180);
+  -moz-box-shadow: 6px 6px 0px 0px rgb(253, 249, 180);
+  box-shadow: 6px 6px 0px 0px rgb(253, 249, 180);
+}
+.div3 .row,
+.div3 .box {
+  background-color: rgb(253, 249, 180);
+}
+
+.div .box {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  padding: 20px;
+  height: 40%;
+}
+.bottom-0 {
+  width: inherit;
+  border-radius: 5px;
+}
+.div4 {
+  border: 1px solid rgb(0, 0, 0, 0.815);
+  -webkit-box-shadow: 6px 6px 0px 0px rgb(255, 204, 204);
+  -moz-box-shadow: 6px 6px 0px 0px rgb(255, 204, 204);
+  box-shadow: 6px 6px 0px 0px rgb(255, 204, 204);
+}
+.div4 .row,
+.div4 .box1 {
+  background-color: rgb(255, 204, 204);
+}
+
+/* window section */
+
+/* .container1 {
+  border: 1px solid #000000;
+} */
+
+.row {
+  padding: 10px;
+  background: #f1f1f1;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.815);
+  border-radius: 5px 5px 0 0;
+}
+
+.column {
+  float: left;
+}
+
+.leftWindow {
+  width: 15%;
+}
+
+.rightWsindow {
+  width: 10%;
+}
+
+.middle {
+  width: 75%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+input[type="text"] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+.content {
+  padding: 10px;
+}
+
+.box {
+  border: 1px solid #3b3a3a;
+  padding: 1rem;
+  margin: 2rem 1rem;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  height: 180px;
+  border: 1px solid #3b3a3a;
+  padding: 1rem;
+  display: flex;
+  justify-self: center;
+}
+
+/* _______________________________________________________________________________________
+result loading animation   
+_______________________________________________________________________________________ */
+
+.progressBox {
+  display: inline-block;
+  width: 92%;
+}
+.top-right1 .inputSampleRes {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 92%;
+  height: 100%;
+  display: flex;
+}
+.progress-wrapper {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+.inputSampleRes1 {
+  position: relative;
+  top: 45%;
+  z-index: 100;
+}
+
+.progress {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  border: 10px solid #f4a261;
+  border-radius: 15px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.progress .color {
+  position: absolute;
+  background-color: #ffffff;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: progres 4s infinite linear;
+}
+
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------- */
+/* pregressbox image under progress bar */
+
+.sampleinput-box img {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.images {
+  height: 200px;
+  width: 400px;
+  justify-self: center;
+}
+
+#result-UL {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    height: 30%;
+  }
+  .right {
+    height: 70%;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.box1 {
+  background-color: black;
+  height: 100vh;
+}
+
+.box2 {
+  background-color: blue;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+
+.box3 {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box3a {
+  background-color: rgb(58, 47, 47);
+}
+
+.box3b {
+  background-color: brown;
+}
+.box4 {
+  background-color: yellow;
+}
